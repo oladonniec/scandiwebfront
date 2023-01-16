@@ -1,0 +1,158 @@
+:root {
+  --mainColor: rgb(233, 56, 65);
+  --borderColor: #c0c0c0;
+}
+
+html {
+  font-size: 62.5%; /* 16px x 62.5% = 10px = 1rem*/
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 6rem;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  background-color: var(--mainColor);
+  text-align: center;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+.product-list {
+  position: relative;
+}
+
+.card {
+  min-width: 300px;
+  border: 0.1rem solid var(--borderColor);
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.discs {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.furnitures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#add-button {
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+
+#delete-product-button {
+  padding: 0.5rem;
+  margin: 0.2rem;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+#save-button {
+  padding: 0.5rem;
+  margin: 0.2rem;
+  background-color: rgb(73, 73, 251);
+  color: #fff;
+}
+
+#cancel-button {
+  padding: 0.5rem;
+  margin: 0.2rem;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+#product_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin-top: 3rem;
+}
+
+#product_form > div input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  min-width: 60%;
+  margin-left: 1rem;
+}
+
+#product_form > div select {
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  min-width: 40rem;
+}
+
+.productSwitch {
+  width: 40rem;
+  min-height: 10rem;
+  margin-top: 2rem;
+  border: 0.1rem solid var(--borderColor);
+  background-color: rgba(41, 60, 72, 0.12);
+  padding: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+}

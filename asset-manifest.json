@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/scandiwebfront/static/css/main.69b5002d.css",
+    "main.js": "/scandiwebfront/static/js/main.f24836bc.js",
+    "index.html": "/scandiwebfront/index.html",
+    "main.69b5002d.css.map": "/scandiwebfront/static/css/main.69b5002d.css.map",
+    "main.f24836bc.js.map": "/scandiwebfront/static/js/main.f24836bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69b5002d.css",
+    "static/js/main.f24836bc.js"
+  ]
+}
